@@ -8,27 +8,20 @@ import ThemeToggle from './components/ThemeToggle';
 
 const App = () => {
   const [selectedTimeframe, setSelectedTimeframe] = useState('daily');
-
   const [isDarkMode, setIsDarkMode] = useState(true);
 
-  // Function to toggle between dark mode and light mode
   const toggleTheme = () => {
     setIsDarkMode(prevMode => !prevMode);
   };
 
-  // Effect to apply or remove the dark mode class on the body element based on the state
   useEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
+    document.body.classList.toggle('dark-mode', isDarkMode);
   }, [isDarkMode]);
 
   return (
     <div className="app">
       <ThemeToggle toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-      
+
       <div className="main-content">
         <div className="left-sidebar">
           <div className="report-box">

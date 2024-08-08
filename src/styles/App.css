@@ -8,7 +8,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .app-container {
@@ -30,6 +29,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  padding-top: 100px;
 }
 
 .left-sidebar {
@@ -107,28 +107,38 @@ body {
   flex-wrap: wrap;
 }
 
-
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .main-content {
     flex-direction: column;
+    padding-top: 0px;
   }
 
   .left-sidebar {
     width: 100%;
     align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--sidebar-bg);
   }
 
-  .top-row > div, .bottom-row > div {
-    flex: 1 1 calc(50% - 20px);
+  .report-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
   }
-}
 
-@media (max-width: 480px) {
+  .top-row, .bottom-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .top-row > div, .bottom-row > div {
     flex: 1 1 100%;
   }
 }
 
-
+@media (max-width: 480px) {
+  .top-row, .bottom-row {
+    gap: 15px;
+  }
+}
