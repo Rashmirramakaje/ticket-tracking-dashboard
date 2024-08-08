@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  --primary-color: hsl(235, 46%, 80%);
+  --text-gray: hsl(0, 0%, 80%);
+  --Job-color: hsl(15, 100%, 70%);
+  --Fun-color: hsl(195, 74%, 62%);
+  --Learning-color: hsl(348, 100%, 68%);
+  --Sport-color: hsl(145, 58%, 55%);
+  --Emails-color: hsl(264, 64%, 52%);
+  --Health-color: hsl(43, 84%, 65%);
+  --very-dark-blue: hsl(226, 43%, 90%);
+  --dark-blue: hsl(235, 46%, 80%);
+  --desaturated-blue: hsl(235, 45%, 90%);
+  --pale-blue: hsl(236, 100%, 10%);
+  --text-color: var(--very-dark-blue);
+  --text-muted-color: var(--desaturated-blue);
+  --background-color: #fffffff;
+  --card-background-color: var(--dark-blue);
+  --text-on-primary-color: #000000;
+  --font-family: 'Rubik', sans-serif;
+  --font-size-body: 18px;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+}
+
+body.dark-mode {
+  --primary-color: hsl(246, 80%, 60%);
+  --text-gray: hsl(0deg 0.83% 47.79%);
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+  --text-color: var(--very-dark-blue);
+  --text-muted-color: var(--desaturated-blue);
+  --background-color: #000000;
+  --card-background-color: var(--dark-blue);
+  --text-on-primary-color: #ffffff;
+}
